@@ -1,9 +1,9 @@
 
 h1 {
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Oleo Script Swash Caps', cursive, sans-serif;
 }
 
 p, h2 {
-  font-family: 'Macondo', cursive;
+  font-family: 'Macondo', cursive, sans-serif;
   line-height: 1.5em;
 }
