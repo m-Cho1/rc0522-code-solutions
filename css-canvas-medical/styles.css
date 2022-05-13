@@ -127,3 +127,55 @@
   color: white;
   font-size: 1.1rem;
 }
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.background-color {
+  background-color: #f5f5f5;
+}
+
+.font-text {
+  font-family: Avenir, sans-serif;
+}
+
+.font-title {
+  font-family: "Tiempos Headline", sans-serif;
+}
+
+.style-title {
+  color: #707070;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.style-row-three {
+  padding-bottom: 5rem;
+}
+
+.style-text {
+  width: 30%;
+  color: #707070;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+
+.style-text-container {
+  justify-content: center;
+}
+
+.style-text-location {
+  color: #707070;
+  font-size: 1.2rem;
+}
+
+.margin {
+  margin-top: 2rem;
+}
