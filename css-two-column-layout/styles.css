@@ -1,0 +1,16 @@
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.style-wrap {
+  flex-wrap: wrap;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
