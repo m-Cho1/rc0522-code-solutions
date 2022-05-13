@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.padding {
+  padding: 0 5rem;
+}
+
+.margin-top {
+  margin-top: 2.5rem;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.border-line {
+  border-bottom: 0.8px solid #e0e0e0;
+}
+
+.main-logo {
+  width: 20%;
+}
+
+.nav-padding-bottom {
+  padding-bottom: 1rem;
+}
+
+.navbar-style {
+  justify-content: flex-end;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar {
+  font-family: Avenir, sans-serif;
+  margin: 0 2rem;
+  color: #acacac;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button-navbar {
+  width: 5.9rem;
+  height: 2.5rem;
+  background-color: #294464;
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.2rem;
+}
