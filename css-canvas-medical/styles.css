@@ -13,11 +13,15 @@
 }
 
 .padding {
-  padding: 0 5rem;
+  padding: 0 7rem;
 }
 
 .margin-top {
   margin-top: 2.5rem;
+}
+
+.column-full {
+  width: 100%;
 }
 
 .column-half {
@@ -63,4 +67,63 @@
   font-size: 0.9rem;
   border: none;
   border-radius: 0.2rem;
+}
+
+.overlay {
+  background: linear-gradient(transparent, rgb(0 0 0 / 45%));
+  position: absolute;
+  top: 8.5rem;
+  left: 7rem;
+  width: 85.2%;
+  height: 630px;
+}
+
+.hero-img-container {
+  display: flex;
+  width: 100%;
+}
+
+.img-style-hero {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+}
+
+.text-container-in-img {
+  width: 60%;
+  position: absolute;
+  top: 14rem;
+  left: 11rem;
+  color: white;
+}
+
+.style-title-in-img {
+  width: 60%;
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.style-text-in-img {
+  width: 63%;
+  font-family: Avenir, sans-serif;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  letter-spacing: 0.11px;
+}
+
+.position-button-second-row {
+  position: absolute;
+  bottom: 1rem;
+  left: 11rem;
+}
+
+.design-button-get-started {
+  width: 11rem;
+  height: 3.3rem;
+  background-color: #294464;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  font-size: 1.1rem;
 }
