@@ -1,0 +1,46 @@
+.margin-top-second-row {
+  margin-top: 7rem;
+}
+
+.overlay-second-row {
+  background: linear-gradient(transparent, rgb(0 0 0 / 35%));
+  position: absolute;
+  top: 13rem;
+  left: 7rem;
+  width: 85.2%;
+  height: 588px;
+}
+
+.img-container-second-row {
+  display: flex;
+  width: 100%;
+}
+
+.img-style-second-row {
+  width: 100%;
+  height: 588px;
+  object-fit: cover;
+}
+
+.text-container-second-row {
+  width: 60%;
+  position: absolute;
+  bottom: 5rem;
+  left: 12rem;
+  color: white;
+}
+
+.style-title-second-row {
+  width: 67%;
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.style-text-second-row {
+  width: 65%;
+  font-family: Avenir, sans-serif;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  letter-spacing: 0.11px;
+}
