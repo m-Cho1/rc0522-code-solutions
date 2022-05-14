@@ -53,14 +53,14 @@
   padding-top: 8rem;
 }
 
-.style-title-row-three {
+.style-title-row-three-to-five {
   font-size: 2.4rem;
   color: #52524f;
   font-weight: 300;
 }
 
-.style-text-row-three {
-  font-size: 1.1rem;
+.style-text-row-three-to-five {
+  font-size: 1rem;
   line-height: 2rem;
   color: #52524f;
 }
@@ -71,4 +71,12 @@
 
 .italic {
   font-style: italic;
+}
+
+.padding-bottom-row-three-to-five {
+  padding-bottom: 6rem;
+}
+
+.img-row-four {
+  width: 100%;
 }
