@@ -59,6 +59,10 @@
   font-size: 1rem;
 }
 
+.navbar-select {
+  color: #294464;
+}
+
 .button-navbar {
   width: 5.9rem;
   height: 2.5rem;
