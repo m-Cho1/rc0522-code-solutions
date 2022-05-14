@@ -44,3 +44,31 @@
   line-height: 2rem;
   letter-spacing: 0.11px;
 }
+
+.padding-top-img-row2 {
+  padding-top: 5rem;
+}
+
+.padding-top-text-row2 {
+  padding-top: 8rem;
+}
+
+.style-title-row-three {
+  font-size: 2.4rem;
+  color: #52524f;
+  font-weight: 300;
+}
+
+.style-text-row-three {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: #52524f;
+}
+
+.select {
+  color: #3062a0;
+}
+
+.italic {
+  font-style: italic;
+}
