@@ -52,3 +52,37 @@
 .select {
   color: #3062a0;
 }
+
+.style-text-container {
+  padding: 0 14rem;
+}
+
+.style-title-third-row {
+  color: #585858;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.style-text-list {
+  width: 93%;
+  color: #585858;
+}
+
+.padding-left {
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+.style-list-item {
+  font-size: 1.3rem;
+}
+
+.style-text-row-three {
+  color: #585858;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.padding-bottom-row3 {
+  padding-bottom: 6rem;
+}
