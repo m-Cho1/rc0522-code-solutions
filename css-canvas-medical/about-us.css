@@ -1,0 +1,10 @@
+.img-container-second-row {
+  display: flex;
+  width: 100%;
+}
+
+.img-style-second-row {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+}
