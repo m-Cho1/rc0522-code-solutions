@@ -1,0 +1,63 @@
+body {
+  background-color: #f7f8fa;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-fourth {
+  width: 25%;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-phone-container > img {
+  width: 85%;
+}
+
+.img-logo-container > img {
+  width: 25%;
+}
+
+.style-column-fourth {
+  text-align: center;
+}
+
+.style-column-full {
+  text-align: center;
+}
+
+h1,
+h4,
+p {
+  font-family: Barlow, sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+p {
+  font-size: 0.6rem;
+  margin: 0;
+}
