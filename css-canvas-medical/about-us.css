@@ -40,6 +40,30 @@
   letter-spacing: 0.11px;
 }
 
+.text-container-third-row {
+  width: 41%;
+}
+
+.item-center {
+  justify-content: center;
+}
+
+.text-container-third-row > h1 {
+  font-weight: 500;
+  color: #5f676e;
+}
+
+.text-container-third-row > p {
+  color: #5f676e;
+  line-height: 1.5rem;
+  letter-spacing: 0.1px;
+  font-size: 0.9rem;
+}
+
 .select {
   color: #294464;
+}
+
+.padding-bottom {
+  padding-bottom: 5rem;
 }
