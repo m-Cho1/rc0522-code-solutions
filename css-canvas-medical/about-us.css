@@ -67,3 +67,17 @@
 .padding-bottom {
   padding-bottom: 5rem;
 }
+
+.img-container-fourth-row {
+  flex-basis: 73%;
+  flex-wrap: wrap;
+}
+
+.img-container-fourth-row > img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.direction-column {
+  flex-direction: column;
+}
