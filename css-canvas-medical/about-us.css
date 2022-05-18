@@ -123,3 +123,16 @@
 .advisor-container > p {
   font-size: 0.9rem;
 }
+
+.text-container-row-six {
+  width: 35%;
+}
+
+.text-container-row-six > p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.text-container-row-six > h2 {
+  font-weight: 300;
+}
