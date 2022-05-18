@@ -57,7 +57,7 @@ function categorizeAcidity(pH) {
     return 'neutral';
   } else if (pH >= 0 && pH < 7.0) {
     return 'acid';
-  } else if (pH <= 14 && pH >= 7.1) {
+  } else if (pH <= 14.0 && pH >= 7.0) {
     return 'base';
   } else {
     return 'invalid pH level';
