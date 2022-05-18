@@ -1,0 +1,60 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-20 {
+  width: 20%;
+}
+
+.margin-left-right {
+  margin: 0 0.8rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.text-center {
+  justify-content: center;
+}
+
+.img-container {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 310px;
+}
+
+.object-fit {
+  object-fit: cover;
+}
+
+h2,
+p {
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+span {
+  color: rgb(218 218 218);
+}
+
+.text-highlight {
+  color: black;
+  background-color: antiquewhite;
+}
+
+.font-strike {
+  text-decoration: line-through;
+}
