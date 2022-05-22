@@ -6,9 +6,9 @@
 // - create new array 'result'
 // - go through each elements in the input array.
 // - create a new variable 'currentIndex', and assign the index of the input array.
-// - while going through index of the input array, check if the array is not index.
-// - if not index, then push the current index to 'result' array.
-// - if it is array, then go through that currentIndex's index, then push the 'currentIndex' value to 'result' array.
+// - while going through index of the input array, check if the cuurentIndex is not an array.
+// - if not array, then push the current index to 'result' array.
+// - if it is array, then go through each elements in that currentIndex, then push the each element in the 'currentIndex' value to 'result' array.
 // - return 'result' as a reutrn value.
 
 function flatten(array) {
