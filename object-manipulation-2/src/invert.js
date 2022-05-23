@@ -1,5 +1,4 @@
 /* exported invert */
-
 // input: source (any JS object)
 // output: a new object containing al lproperties of source object, but with keys and values inverted
 
