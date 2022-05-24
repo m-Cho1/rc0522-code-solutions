@@ -1,0 +1,33 @@
+.text-container {
+  width: 100%;
+  min-height: 95vh;
+  margin: auto;
+}
+
+.style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5rem;
+}
+
+span {
+  font-size: 3.3rem;
+  font-weight: bold;
+  white-space: pre;
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 0.3rem;
+}
+
+.start {
+  border-bottom: 5px solid black;
+}
+
+.color-wrong {
+  color: red;
+  border-bottom: 5px solid red;
+}
+
+.color-right {
+  color: green;
+}
