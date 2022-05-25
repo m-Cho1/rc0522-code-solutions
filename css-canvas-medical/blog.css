@@ -54,3 +54,46 @@ p.font-email {
   font-size: 1rem;
   background-color: #294464;
 }
+
+.img-container-row3 {
+  width: 60%;
+}
+
+.img-container-row3 > img {
+  width: 100%;
+}
+
+.position-row3-img1-3 {
+  justify-content: flex-end;
+}
+
+.position-row3-img2-4 {
+  justify-content: flex-start;
+}
+
+.img-height {
+  height: 322px;
+}
+
+.padding-right {
+  padding-right: 1rem;
+}
+
+.padding-left {
+  padding-left: 1rem;
+}
+
+.font-color-navy {
+  color: #294464;
+}
+
+.img-container-row3 > p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #565656;
+}
+
+.img-container-row3 > h2 {
+  width: 80%;
+}
