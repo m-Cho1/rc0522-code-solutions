@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 a.select {
   color: #294464;
 }
@@ -83,6 +87,10 @@ p.font-email {
   padding-left: 1rem;
 }
 
+.padding-bottom {
+  padding-bottom: 6rem;
+}
+
 .font-color-navy {
   color: #294464;
 }
@@ -95,5 +103,7 @@ p.font-email {
 }
 
 .img-container-row3 > h2 {
-  width: 80%;
+  font-size: 1.7rem;
+  font-weight: 300;
+  width: 90%;
 }
