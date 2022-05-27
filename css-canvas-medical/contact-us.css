@@ -1,0 +1,11 @@
+input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  width: 30rem;
+}
+
+.style-button-row2 {
+  display: block;
+}
