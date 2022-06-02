@@ -5,7 +5,6 @@ function titleCase(title) {
   var toLow = title.toLowerCase();
   var firstCap = toLow.charAt(0).toUpperCase() + toLow.substring(1);
   var splitted = firstCap.split(' ');
-  // console.log('splitted: ', splitted);
   var result = [];
   for (var i = 0; i < splitted.length; i++) {
     var word = splitted[i];
@@ -22,12 +21,24 @@ function titleCase(title) {
     if (word === 'Javascript:') {
       word = 'JavaScript:';
     }
-    // console.log('word : ', word);
+    if (word === 'In-depth') {
+      word = 'In-Depth';
+    }
+    if (word === 'Self-taught') {
+      word = 'Self-Taught';
+    }
 
     result.push(word);
   }
-  var result1 = result[0].charAt(0).toUpperCase() + result[0].substring(1);
-  console.log('result : ', result);
+  for (var j = 0; j < result.length; j++) {
+    if (result[0] === 'the') {
+      result[0] = 'The';
+    }
+    if (result[1] === 'the') {
+      result[1] = 'The';
+    }
+  }
+  // console.log('result : ', result);
   return result.join(' ');
 }
 
