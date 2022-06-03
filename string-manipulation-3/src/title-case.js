@@ -37,6 +37,9 @@ function titleCase(title) {
     if (result[1] === 'the') {
       result[1] = 'The';
     }
+    if (result[3] === 'the' && result[2].includes('Programmer:') === true) {
+      result[3] = 'The';
+    }
   }
   // console.log('result : ', result);
   return result.join(' ');
