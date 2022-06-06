@@ -1,48 +1,46 @@
 /* exported titleCase */
 
 function titleCase(title) {
-  var minorWords = ['In', 'For', 'Of', 'The', 'In', 'To', 'On', 'And'];
-  var toLow = title.toLowerCase();
-  var firstCap = toLow.charAt(0).toUpperCase() + toLow.substring(1);
-  var splitted = firstCap.split(' ');
   var result = [];
-  for (var i = 0; i < splitted.length; i++) {
-    var word = splitted[i];
-    word = (word[0].toUpperCase() + word.substring(1));
-    if (minorWords.indexOf(word) !== -1) {
-      word = word.toLowerCase();
+  var lowerCased = title.toLowerCase();
+  var split = lowerCased.split(' ');
+  for (var i = 0; i < split.length; i++) {
+    var index = split[i];
+    index = index[0].toUpperCase() + index.slice(1);
+    if (index === 'Javascript') {
+      index = 'JavaScript';
     }
-    if (word === 'Api') {
-      word = 'API';
+    if (index.includes(':') && index.includes('Javascript')) {
+      index = 'JavaScript:';
     }
-    if (word === 'Javascript') {
-      word = 'JavaScript';
+    if (index === 'Api') {
+      index = 'API';
     }
-    if (word === 'Javascript:') {
-      word = 'JavaScript:';
+    if (index.includes('-')) {
+      var hyphenated = index.split('-');
+      hyphenated = hyphenated[0] + '-' + hyphenated[1][0].toUpperCase() + hyphenated[1].slice(1);
+      // console.log('hyphenated : ', hyphenated);
+      index = hyphenated;
     }
-    if (word === 'In-depth') {
-      word = 'In-Depth';
+    if (index.length >= 4) {
+      index = index[0].toUpperCase() + index.slice(1);
     }
-    if (word === 'Self-taught') {
-      word = 'Self-Taught';
+    if (index === 'The' || index === 'To' || index === 'In' || index === 'For' || index === 'Of' || index === 'On' || index === 'And') {
+      index = index[0].toLowerCase() + index.slice(1);
     }
-
-    result.push(word);
+    result.push(index);
   }
-  for (var j = 0; j < result.length; j++) {
-    if (result[0] === 'the') {
-      result[0] = 'The';
-    }
-    if (result[1] === 'the') {
-      result[1] = 'The';
-    }
-    if (result[3] === 'the' && result[2].includes('Programmer:') === true) {
-      result[3] = 'The';
-    }
+  if (result[0] === 'the') {
+    result[0] = 'The';
   }
-  // console.log('result : ', result);
+  if (result[1] === 'the') {
+    result[1] = 'The';
+  }
+  if (result[3] === 'the' && result[2].includes('Programmer:') === true) {
+    result[3] = 'The';
+  }
   return result.join(' ');
+
 }
 
 // - change input title into all lowercased, store into 'toLow' variable.
@@ -51,7 +49,7 @@ function titleCase(title) {
 // - create an empty array 'result'.
 // - go through each element in the 'splitted' array.
 // - store the index of splitted array into 'word' variable.
-// - if word's length is greater than 3, uppercase the word's first character.
+// - if word's length is greater than or equal to 4, uppercase the word's first character.
 // - if word's value is 'api, or 'Javascript', or 'Javascript:', give the value of 'JavaScript'.
 // - if the word's value is any 'minor' words, lowercase them.
 // - if the word is any 'major' words, uppercase the first character of word.
