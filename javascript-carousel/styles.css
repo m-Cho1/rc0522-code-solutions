@@ -30,7 +30,7 @@
 }
 
 img {
-  width: 60%;
+  width: 40%;
 }
 
 .margin {
@@ -47,4 +47,8 @@ img {
 
 i:hover {
   cursor: pointer;
+}
+
+.padding-bottom {
+  padding-bottom: 3rem;
 }
