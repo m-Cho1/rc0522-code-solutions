@@ -1,11 +1,87 @@
+body {
+  margin: 0 auto;
+}
+
 input {
   display: block;
   border: none;
   border-bottom: 1px solid grey;
   text-align: center;
-  width: 30rem;
+  width: 35rem;
+  height: 2rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 35rem;
+  height: 10rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .style-button-row2 {
   display: block;
+  width: 4.5rem;
+  height: 2rem;
+  border: none;
+  background-color: #294464;
+  color: white;
+  border-radius: 0.2rem;
+}
+
+.padding-top-row2 {
+  padding-top: 4rem;
+}
+
+.width68 {
+  width: 68%;
+}
+
+.style-text-row2 {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.style-title-row2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.color {
+  color: rgb(92 91 91);
+}
+
+.style-phone-number {
+  font-size: 2rem;
+  color: #294464;
+  font-weight: 300;
+}
+
+::placeholder {
+  font-family: Avenir, sans-serif;
+  color: lightgrey;
+  font-size: 1.4rem;
+}
+
+textarea::placeholder {
+  padding-top: 3.5rem;
+  width: 100%;
+}
+
+.button-container-row2 {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.padding-bottom {
+  padding-bottom: 5rem;
+  border-bottom: solid 1px rgb(237 240 243);
 }
