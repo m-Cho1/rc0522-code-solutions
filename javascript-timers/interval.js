@@ -1,5 +1,5 @@
 var $countdown = document.querySelector('.countdown-display');
-var text = ['4', '3', '2', '1', '~Earth beeeeeeelowwwwww Us~'];
+var text = ['3', '2', '1', '~Earth beeeeeeelowwwwww Us~'];
 var counter = 0;
 
 var intervalID = setInterval(function () {
