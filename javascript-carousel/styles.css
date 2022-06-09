@@ -1,0 +1,54 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.margin-top {
+  margin-top: 5rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.column-10 {
+  width: 10%;
+}
+
+.column-80 {
+  width: 80%;
+}
+
+.style-arrow {
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+img {
+  width: 40%;
+}
+
+.margin {
+  margin: 0.3rem;
+}
+
+#left:hover {
+  cursor: pointer;
+}
+
+#right:hover {
+  cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.padding-bottom {
+  padding-bottom: 3rem;
+}

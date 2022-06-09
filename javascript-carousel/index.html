@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container margin-top">
+    <div class="row display-flex justify-center">
+      <div class="column-10 display-flex style-arrow">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="column-80">
+        <div class="img-container display-flex justify-center">
+          <img src="images/001.png" alt="pokemon image">
+        </div>
+      </div>
+      <div class="column-10 display-flex style-arrow">
+        <i id="right" class="fa-solid fa-angle-right "></i>
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="column-full display-flex justify-center indicator">
+        <i id="0" class="fas fa-circle margin dot"></i>
+        <i id="1" class="far fa-circle margin dot"></i>
+        <i id="2" class="far fa-circle margin dot"></i>
+        <i id="3" class="far fa-circle margin dot"></i>
+        <i id="4" class="far fa-circle margin dot"></i>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
