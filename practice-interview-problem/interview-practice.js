@@ -45,6 +45,9 @@ function viewAniimalFunc(event) {
       var li = document.createElement('li');
       li.textContent = animalName.name;
       $animalList.appendChild(li);
+      var $img = document.createElement('img');
+      $img.setAttribute('src', animalName.image_link);
+      li.appendChild($img);
     }
   }
   xhr.send();
