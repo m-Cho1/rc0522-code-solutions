@@ -35,8 +35,39 @@ var deck = [];
 
 for (var i = 0; i < suits.length; i++) {
   for (var j = 0; j < ranks.length; j++) {
-    var card = { $rank: ranks[j], $suit: suits[i] };
-    deck.push(card);
+    deck.push(ranks[j] + suits[i]);
+  }
+}
+
+// shuffle cards:
+var shuffleDeck = _.shuffle(deck);
+
+// handout cards (game start):
+function startGame(players) {
+  for (var k = 0; k < players.length; k++) {
+    players[k].hand.push(shuffleDeck[k], shuffleDeck[k + players.length]);
+  }
+  var playerPoints = [];
+  for (var l = 0; l < players.length; l++) {
+    var point = handlePoints(players[l].hand);
+    playerPoints.push(point);
+  }
+  var highestPointIdx = playerPoints.indexOf(highestPoint(playerPoints));
+
+  if (tie(playerPoints).length === 0) {
+    console.log(playerPoints);
+    console.log(players[highestPointIdx].name);
+  } else {
+    var remainingPlayers = [];
+    var tiedIdx = tie(playerPoints);
+    for (var m = 0; m < tiedIdx.length; m++) {
+      if (!remainingPlayers.includes(tiedIdx[m])) {
+        remainingPlayers.push(players[tiedIdx[m]]);
+      }
+      remainingPlayers[m].hand = [];
+    }
+    console.log(playerPoints);
+    startGame(remainingPlayers);
   }
 }
 
@@ -81,5 +112,4 @@ function tie(scores) {
   return tieIdx;
 }
 
-// shuffle cards:
-var shuffleDeck = _.shuffle(deck);
+startGame(players);
