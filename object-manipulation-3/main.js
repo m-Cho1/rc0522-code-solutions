@@ -55,8 +55,8 @@ function startGame(players) {
   var highestPointIdx = playerPoints.indexOf(highestPoint(playerPoints));
 
   if (tie(playerPoints).length === 0) {
-    console.log(playerPoints);
-    console.log(players[highestPointIdx].name);
+    console.log('playerPoints: ', playerPoints);
+    console.log('Winner: ', players[highestPointIdx].name);
   } else {
     var remainingPlayers = [];
     var tiedIdx = tie(playerPoints);
@@ -66,7 +66,7 @@ function startGame(players) {
       }
       remainingPlayers[m].hand = [];
     }
-    console.log(playerPoints);
+    console.log('playerPoints: ', playerPoints);
     startGame(remainingPlayers);
   }
 }
