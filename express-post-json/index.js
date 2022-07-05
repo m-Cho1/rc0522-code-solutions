@@ -21,8 +21,6 @@ app.post('/api/grades', (req, res) => {
   nextId++;
   newData.id = id;
   grades[id] = newData;
-  // eslint-disable-next-line no-console
-  console.log('req.body', req.body);
   res.status(201).json(newData);
 
 });
