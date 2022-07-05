@@ -16,14 +16,14 @@ app.get('/api/grades', (req, res, next) => {
 app.use(express.json());
 
 app.post('/api/grades', (req, res) => {
-  if (req.method !== 'POST') {
-    res.status(400).send('bad request');
-    return;
-  }
-  grades[nextId] = req.body;
-  grades[nextId].id = nextId;
+  const newData = req.body;
+  const id = nextId;
   nextId++;
-  res.sendStatus(201);
+  newData.id = id;
+  grades[id] = newData;
+  // eslint-disable-next-line no-console
+  console.log('req.body', req.body);
+  res.status(201).json(newData);
 
 });
 
