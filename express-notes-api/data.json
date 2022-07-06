@@ -1,5 +1,5 @@
 {
-  "nextId": 17,
+  "nextId": 20,
   "notes": {
     "2": {
       "id": 2,
@@ -20,6 +20,14 @@
     "16": {
       "content": "JavaScript is one of the popular language used",
       "id": 16
+    },
+    "18": {
+      "content": "make sure to opt out after testing the server",
+      "id": 18
+    },
+    "19": {
+      "content": "learning server is very fun",
+      "id": 19
     }
   }
 }

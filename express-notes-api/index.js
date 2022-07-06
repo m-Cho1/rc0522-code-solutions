@@ -19,7 +19,7 @@ app.get('/api/notes/:id', (req, res) => {
     res.status(400).json({ error: 'noteId must be a positive integer' });
   } else if (!dataJSON.notes[noteId]) {
     res.status(404).json({ error: 'Cannot find note with id ' + noteId });
-  } else if (dataJSON.notes[noteId]) {
+  } else {
     res.status(200).json(dataJSON.notes[noteId]);
   }
 
@@ -80,7 +80,7 @@ app.put('/api/notes/:id', (req, res) => {
     res.status(400).json({ error: 'content is a required field' });
   } else if (!dataJSON.notes[noteId]) {
     res.status(404).json({ error: 'Cannot find note with id ' + noteId });
-  } else if (updateNote.content) {
+  } else {
 
     dataJSON.notes[noteId] = updateNote;
     updateNote.id = noteId;
