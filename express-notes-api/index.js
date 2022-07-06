@@ -29,6 +29,7 @@ app.use(express.json());
 
 app.post('/api/notes', (req, res) => {
   const newNote = req.body;
+  // const { content } = req.body; destructuring
 
   if (!newNote.content) {
     res.status(400).json({ error: 'content is a required field' });
@@ -37,6 +38,14 @@ app.post('/api/notes', (req, res) => {
     newNote.id = id;
     dataJSON.notes[newNote.id] = newNote;
     dataJSON.nextId++;
+
+    // other way:
+    // const note = {
+    // id: dataJSON.nextId,
+    // content: cnewNote
+    // };
+    // dataJSON.notes[newNote.id] = newNote;
+    // dataJSON.nextId++;
 
     fs.writeFile('./data.json', JSON.stringify(dataJSON, null, 2), 'utf-8', err => {
       if (err) {
