@@ -1,8 +1,5 @@
 {
-  "14": {
-    "content": "I hope this works well-edit"
-  },
-  "nextId": 16,
+  "nextId": 17,
   "notes": {
     "2": {
       "id": 2,
@@ -20,9 +17,9 @@
       "id": 9,
       "content": "Inertia is a property of matter."
     },
-    "15": {
-      "content": "I want to learn more-edit",
-      "id": 15
+    "16": {
+      "content": "JavaScript is one of the popular language used",
+      "id": 16
     }
   }
 }
