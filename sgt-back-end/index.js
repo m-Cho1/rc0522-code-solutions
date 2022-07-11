@@ -34,7 +34,7 @@ app.post('/api/grades/', (req, res, next) => {
     VALUES($1, $2, $3)
     RETURNING *
   `;
-  const values = [req.body.name, req.body.course, req.body.score];
+  const values = [req.body.name, req.body.course, gradeScore];
 
   if (values.includes(undefined)) {
     res.status(400).json({
@@ -68,7 +68,7 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
     WHERE "gradeId" = $4
     RETURNING *
   `;
-  const values = [req.body.name, req.body.course, req.body.score, gradeId];
+  const values = [req.body.name, req.body.course, score, gradeId];
   if (values.includes(undefined)) {
     res.status(400).json({
       error: 'name, course, score are required field'
