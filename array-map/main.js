@@ -8,9 +8,11 @@ const languages = [
   'Structured Query Language'
 ];
 
-const doubled = numbers.map(num => {
-  return num * 2;
-});
+const isDouble = number => {
+  return number * 2;
+};
+const doubled = numbers.map(isDouble);
+
 console.log(`doubled: ${doubled}`);
 
 const prices = numbers.map(num => {
