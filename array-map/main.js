@@ -16,7 +16,7 @@ const doubled = numbers.map(isDouble);
 console.log(`doubled: ${doubled}`);
 
 const prices = numbers.map(num => {
-  return `$${num.toFixed(2).toString()}`;
+  return `$${num.toFixed(2)}`;
 });
 console.log(`prices: ${prices}`);
 
