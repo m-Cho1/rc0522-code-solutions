@@ -32,15 +32,15 @@ const product = numbers.reduce(multiply);
 console.log(`product: ${product}`);
 
 // balance:
-let initialValue = 0;
+const initialValue = 0;
 const sumAllAmounts = (previous, current) => {
   // console.log('previous: ', previous, ', current: ', current);
   if (current.type === 'deposit') {
-    initialValue += current.amount;
+    previous += current.amount;
   } else if (current.type === 'withdrawal') {
-    initialValue -= current.amount;
+    previous -= current.amount;
   }
-  return initialValue;
+  return previous;
 };
 const balance = account.reduce(sumAllAmounts, initialValue);
 console.log('balance: ', balance);
