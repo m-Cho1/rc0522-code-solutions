@@ -8,8 +8,8 @@ class Student {
   }
 
   getFullName() {
-    const { firstName, lastName } = this;
-    return `${firstName} ${lastName}`;
+
+    return `${this.firstName} ${this.lastName}`;
   }
 
   getIntroduction() {
