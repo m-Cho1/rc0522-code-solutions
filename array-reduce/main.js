@@ -50,5 +50,5 @@ const combineProp = (previous, current) => {
   const result = Object.assign(previous, current);
   return result;
 };
-const composite = traits.reduce(combineProp);
+const composite = traits.reduce(combineProp, {});
 console.log('composite: ', composite);
