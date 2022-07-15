@@ -16,30 +16,24 @@ class ToggleButton extends React.Component {
   }
 
   render() {
+    let status = '';
+    let text = 'Off';
+
     if (this.state.toggle) {
-      return (
-        <div className='row'>
-          <div className='slider slider-active'>
-            <div className='btn btn-active' onClick={this.handleToggle}></div>
-          </div>
-          <div>
-            <p className='padding'>On</p>
-          </div>
-        </div>
-      );
-    } else {
-      return (
-        <div className='row'>
-          <div className='slider'>
-            <div className='btn' onClick={this.handleToggle}></div>
-          </div>
-          <div>
-            <p className='padding'>Off</p>
-          </div>
-        </div>
-      );
+      status = '-active';
+      text = 'On';
     }
+
+    return (
+      <div className='row'>
+        <div className={`slider slider${status}`}>
+          <div className={`btn btn${status}`} onClick={this.handleToggle}></div>
+        </div>
+        <div>
+          <p className='padding'>{text}</p>
+        </div>
+      </div>
+    );
   }
 }
-
 export default ToggleButton;
