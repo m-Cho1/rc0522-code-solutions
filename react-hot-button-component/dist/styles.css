@@ -1,0 +1,41 @@
+button {
+  border: solid 1px grey;
+  border-radius: 0.2rem;
+  width: 10rem;
+  height: 5rem;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hot-btn-purple {
+  background-color: rgb(87 0 128);
+  color: white;
+}
+
+.hot-btn-light-purple {
+  background-color: rgb(167 27 248);
+  color: white;
+}
+
+.hot-btn-red {
+  background-color: red;
+  color: white;
+}
+
+.hot-btn-orange {
+  background-color: rgb(255 136 0);
+  color: black;
+}
+
+.hot-btn-yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.hot-btn-white {
+  background-color: white;
+  color: black;
+}
