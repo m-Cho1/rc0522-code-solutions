@@ -13,40 +13,26 @@ class HotButton extends React.Component {
 
   render() {
     const clicks = this.state.clicks;
+    let className = '';
 
     if (clicks < 4) {
-      const className = 'hot-btn-purple';
-      return (
-        <div>
-          <button onClick={this.handleClick} className={className}>Hot Button</button>
-        </div>
-      );
+      className = 'hot-btn-purple';
     } else if (clicks < 7) {
-      const className = 'hot-btn-light-purple';
-      return (
-        <button onClick={this.handleClick} className={className}>Hot Button</button>
-      );
+      className = 'hot-btn-light-purple';
     } else if (clicks < 10) {
-      const className = 'hot-btn-red';
-      return (
-        <button onClick={this.handleClick} className={className}>Hot Button</button>
-      );
+      className = 'hot-btn-red';
     } else if (clicks < 13) {
-      const className = 'hot-btn-orange';
-      return (
-        <button onClick={this.handleClick} className={className}>Hot Button</button>
-      );
+      className = 'hot-btn-orange';
     } else if (clicks < 16) {
-      const className = 'hot-btn-yellow';
-      return (
-        <button onClick={this.handleClick} className={className}>Hot Button</button>
-      );
+      className = 'hot-btn-yellow';
     } else {
-      const className = 'hot-btn-white';
-      return (
-        <button onClick={this.handleClick} className={className}>Hot Button</button>
-      );
+      className = 'hot-btn-white';
     }
+
+    return (
+      <button onClick={this.handleClick} className={className}>Hot Button
+      </button>
+    );
   }
 }
 
