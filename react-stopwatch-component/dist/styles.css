@@ -1,0 +1,24 @@
+.stopwatch {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: solid 2px;
+  margin: auto;
+}
+
+.number {
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.btn {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
