@@ -32,4 +32,4 @@ class PokemonList extends React.Component {
 
 const container = document.querySelector('#root');
 const root = ReactDOM.createRoot(container);
-root.render(PokemonList);
+root.render(<PokemonList />);
