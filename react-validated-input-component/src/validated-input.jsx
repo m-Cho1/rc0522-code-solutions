@@ -15,11 +15,18 @@ class ValidateInput extends React.Component {
     const value = event.target.value;
 
     if (value === '') {
-      this.setState({ message: 'Password is required' });
+      this.setState({
+        password: value,
+        message: 'Password is required'
+      });
       return;
     }
     if (value.length < 8) {
-      this.setState({ message: 'Your password is too short' });
+      this.setState({
+        password: value,
+        message: 'Your password is too short'
+
+      });
       return;
     }
 
@@ -52,6 +59,7 @@ class ValidateInput extends React.Component {
             id='password'
             type="password"
             required
+            value={this.state.password}
             onChange={this.handlePasswordChange} />
           </label>
           <span>
