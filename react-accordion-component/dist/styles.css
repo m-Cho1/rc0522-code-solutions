@@ -1,0 +1,34 @@
+.accordion {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+h3 {
+  margin: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 1rem 1rem;
+}
