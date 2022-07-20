@@ -75,7 +75,7 @@ app.post('/api/auth/sign-in', (req, res, next) => {
                 username: result.rows[0].username
               };
               const token = jwt.sign(payload, process.env.TOKEN_SECRET);
-              res.status(200).send({ payload, token });
+              res.status(200).json({ payload, token });
             }
           })
           .catch(err => next(err));
