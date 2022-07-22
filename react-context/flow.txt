@@ -1,0 +1,23 @@
+user can sign up
+  - handleSubmit is fired when user clicks on register btn
+  - 'POST' request is called on post method in server(index.js)
+  - if condition passes for signup, then username and hashedPassword is created in the database
+  - then signup page is re-rendered to signin page
+
+
+user can sign in
+  - when login button is clicked, handleSubmit is fired in client, then POST request is called in server
+  - in server, if username and password matches in the database, server creates a token with userId, that can be used to stay sign in.
+  - database updates with userId with token
+  - if username or password doesn't match, server throws an error with error message
+
+
+user can stay signed in
+  - after refreshing the page, server checks for token of the user,
+    checking for encrypted token, decrypt it to check if the user is the same user after refreshing the page.
+  - if the token and userId match, the page stays. Else, throw an error with error message from errorMiddleware
+
+
+user can sign out
+  - handleSignOut is called when user clicks on signout button
+  - user property in client will be null, and page will change to signin page
