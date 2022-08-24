@@ -1,0 +1,26 @@
+i {
+  cursor: pointer;
+}
+
+.carousel {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col-10 {
+  margin: 4rem;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.dots-container {
+  text-align: center;
+}
